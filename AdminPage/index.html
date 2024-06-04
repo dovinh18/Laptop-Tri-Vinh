@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang quản trị shop Trí Vinh</title>
+
+    <!-- Meta -->
+    <meta
+      name="description"
+      content="Marketplace for Bootstrap Admin Dashboards"
+    />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="canonical" href="https://www.bootstrap.gallery/" />
+    <meta property="og:url" content="https://www.bootstrap.gallery" />
+    <meta
+      property="og:title"
+      content="Admin Templates - Dashboard Templates | Bootstrap Gallery"
+    />
+    <meta
+      property="og:description"
+      content="Marketplace for Bootstrap Admin Dashboards"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:site_name" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <link rel="stylesheet" href="assets/fonts/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+
+    <!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+    <!-- Scrollbar CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css"
+    />
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="assets/vendor/toastify/toastify.css" />
+  </head>
+
+  <body>
+    <!-- Page wrapper start -->
+    <div class="page-wrapper">
+      <!-- Main container start -->
+      <div class="main-container">
+        <!-- Sidebar wrapper start -->
+        <nav id="sidebar" class="sidebar-wrapper">
+          <!-- App brand starts -->
+          <div
+            class="app-brand px-3 py-2 d-flex align-items-center justify-content-center"
+          >
+            <a href="index.html">
+              <img
+                src="assets/images/MY_LOGO.jpg"
+                class="logo"
+                alt="Bootstrap Gallery"
+                style="width: 100px"
+              />
+            </a>
+          </div>
+          <!-- App brand ends -->
+
+          <!-- Sidebar menu starts -->
+          <div class="sidebarMenuScroll">
+            <ul class="sidebar-menu">
+              <li class="active current-page">
+                <a href="./index.html">
+                  <i class="bi bi-pie-chart"></i>
+                  <span class="menu-text">Thành viên</span>
+                </a>
+              </li>
+              <li>
+                <a href="tables.html">
+                  <i class="bi bi-border-all"></i>
+                  <span class="menu-text">Danh sách sản phẩm</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-bar-chart-line"></i>
+                  <span class="menu-text">Sales</span>
+                  <span
+                    class="badge border border-danger text-danger rounded-5 ms-2"
+                    >New</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-check-circle"></i>
+                  <span class="menu-text">Subscribers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-telephone"></i>
+                  <span class="menu-text">Contacts</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-box"></i>
+                  <span class="menu-text">FAQ's</span>
+                  <span
+                    class="badge border border-success text-success rounded-5 ms-2"
+                    >New</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-calendar2"></i>
+                  <span class="menu-text">Calendar</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-stickies"></i>
+                  <span class="menu-text">Components</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Accordions</a>
+                  </li>
+                  <li>
+                    <a href="#!">Alerts</a>
+                  </li>
+                  <li>
+                    <a href="#!">Buttons</a>
+                  </li>
+                  <li>
+                    <a href="#!">Badges</a>
+                  </li>
+                  <li>
+                    <a href="#!">Carousel</a>
+                  </li>
+                  <li>
+                    <a href="#!">List Items</a>
+                  </li>
+                  <li>
+                    <a href="#!">Progress Bars</a>
+                  </li>
+                  <li>
+                    <a href="#!">Popovers</a>
+                  </li>
+                  <li>
+                    <a href="#!">Tooltips</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-ui-checks-grid"></i>
+                  <span class="menu-text">Forms</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Basic Form Inputs</a>
+                  </li>
+                  <li>
+                    <a href="#!">Checkbox &amp; Radio</a>
+                  </li>
+                  <li>
+                    <a href="#!">File Input</a>
+                  </li>
+                  <li>
+                    <a href="#!">Validations</a>
+                  </li>
+                  <li>
+                    <a href="#!">Date Time Pickers</a>
+                  </li>
+                  <li>
+                    <a href="#!">Form Layouts</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-gear"></i>
+                  <span class="menu-text">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-postcard"></i>
+                  <span class="menu-text">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-layout-text-window-reverse"></i>
+                  <span class="menu-text">Starter Page</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-code-square"></i>
+                  <span class="menu-text">Cards</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Cards</a>
+                  </li>
+                  <li>
+                    <a href="#!">Advanced Cards</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-pie-chart"></i>
+                  <span class="menu-text">Graphs</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Apex</a>
+                  </li>
+                  <li>
+                    <a href="#!">Morris</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-pin-map"></i>
+                  <span class="menu-text">Maps</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-slash-square"></i>
+                  <span class="menu-text">Tabs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-terminal"></i>
+                  <span class="menu-text">Modals</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-textarea"></i>
+                  <span class="menu-text">Icons</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-explicit"></i>
+                  <span class="menu-text">Typography</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-upc-scan"></i>
+                  <span class="menu-text">Login/Signup</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Login</a>
+                  </li>
+                  <li>
+                    <a href="#!">Signup</a>
+                  </li>
+                  <li>
+                    <a href="#!">Forgot Password</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-exclamation-diamond"></i>
+                  <span class="menu-text">Page Not Found</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-exclamation-octagon"></i>
+                  <span class="menu-text">Maintenance</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-code-square"></i>
+                  <span class="menu-text">Multi Level</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Level One Link</a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      Level One Menu
+                      <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                      <li>
+                        <a href="#!">Level Two Link</a>
+                      </li>
+                      <li>
+                        <a href="#!"
+                          >Level Two Menu
+                          <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                          <li>
+                            <a href="#!">Level Three Link</a>
+                          </li>
+                          <li>
+                            <a href="#!">Level Three Link</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Level One Link</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Sidebar menu ends -->
+        </nav>
+        <!-- Sidebar wrapper end -->
+
+        <!-- App container starts -->
+        <div class="app-container">
+          <!-- App header starts -->
+          <div class="app-header d-flex align-items-center">
+            <!-- Toggle buttons start -->
+            <div class="d-flex">
+              <button
+                class="btn btn-outline-primary me-2 toggle-sidebar"
+                id="toggle-sidebar"
+              >
+                <i class="bi bi-text-indent-left fs-5"></i>
+              </button>
+              <button
+                class="btn btn-outline-primary me-2 pin-sidebar"
+                id="pin-sidebar"
+              >
+                <i class="bi bi-text-indent-left fs-5"></i>
+              </button>
+            </div>
+            <!-- Toggle buttons end -->
+
+            <!-- App brand sm start -->
+            <div class="app-brand-sm d-md-none d-sm-block">
+              <a href="#!">
+                <img
+                  src="assets/images/logo-sm.svg"
+                  class="logo"
+                  alt="Bootstrap Gallery"
+                />
+              </a>
+            </div>
+            <!-- App brand sm end -->
+
+            <!-- Breadcrumb start -->
+            <ol class="breadcrumb d-none d-lg-flex ms-3">
+              <li class="breadcrumb-item">
+                <i class="bi bi-house lh-1"></i>
+                <a href="#!">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item text-secondary">Thành viên</li>
+            </ol>
+            <!-- Breadcrumb end -->
+
+            <!-- App header actions start -->
+            <div class="header-actions">
+              <div class="dropdown ms-2">
+                <a
+                  id="userSettings"
+                  class="dropdown-toggle d-flex py-2 align-items-center text-decoration-none"
+                  href="#!"
+                >
+                  <img
+                    id="admin-1-img"
+                    src="assets/images/admin-1.jpg"
+                    class="rounded-2 img-3x"
+                    alt="Bootstrap Gallery"
+                  />
+                  <img
+                    id="admin-2-img"
+                    src="assets/images/admin-1.jpg"
+                    class="rounded-2 img-3x"
+                    alt="Bootstrap Gallery"
+                  />
+                  <img
+                    id="admin-3-img"
+                    src="assets/images/no-user.webp"
+                    class="rounded-2 img-3x"
+                    alt="Bootstrap Gallery"
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                  <div id="admin-1-info" class="p-3 border-bottom mb-2">
+                    <h6 class="mb-1">Đỗ Quang Vinh</h6>
+                    <p class="m-0 small opacity-50">dovinh8082@gmail.com</p>
+                  </div>
+                  <div id="admin-2-info" class="p-3 border-bottom mb-2">
+                    <h6 class="mb-1">Nguyễn Cao Đức Trí</h6>
+                    <p class="m-0 small opacity-50">dovinh8082@gmail.com</p>
+                  </div>
+                  <div id="admin-3-info" class="p-3 border-bottom mb-2">
+                    <h6 class="mb-1"></h6>
+                    <p class="m-0 small opacity-50"></p>
+                  </div>
+                  <a class="dropdown-item d-flex align-items-center" href="#!"
+                    ><i class="bi bi-person fs-4 me-2"></i>Hồ sơ</a
+                  >
+                  <a class="dropdown-item d-flex align-items-center" href="#!"
+                    ><i class="bi bi-gear fs-4 me-2"></i>Cài đặt</a
+                  >
+                  <div class="d-grid p-3 py-2">
+                    <a
+                      class="btn btn-danger"
+                      href="login.html"
+                      onclick="localStorage.getItem('user_login_admin_now').clear()"
+                      >Đăng xuất</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- App header actions end -->
+          </div>
+          <!-- App header ends -->
+
+          <!-- App body starts -->
+          <div class="app-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card mb-4">
+                    <div class="card-header">
+                      <h4 class="card-title">Danh sách thành viên</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="border border-dark rounded-3">
+                        <table class="table align-middle table-hover m-0">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th scope="col">Ảnh đại diện</th>
+                              <th scope="col">MSSV</th>
+                              <th scope="col">Họ và tên</th>
+                              <th scope="col">Tuổi</th>
+                              <th scope="col">Chuyên môn</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Số điện thoại</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>1</th>
+                              <th scope="row">
+                                <img
+                                  class="rounded-circle img-3x me-2"
+                                  src="assets/images/admin-1.jpg"
+                                  alt="Bootstrap Gallery"
+                                />
+                              </th>
+                              <td>2001225873</td>
+                              <td>Đỗ Quang Vinh</td>
+                              <td>20</td>
+                              <td>Backend Developer</td>
+                              <td>dovinh8082@gmail.com</td>
+                              <td>0912678082</td>
+                            </tr>
+                            <tr>
+                              <th>2</th>
+                              <th scope="row">
+                                <img
+                                  class="rounded-circle img-3x me-2"
+                                  src="assets/images/admin-2.jpg"
+                                  alt="Bootstrap Gallery"
+                                />
+                              </th>
+                              <td>2001225535</td>
+                              <td>Nguyễn Cao Đức Trí</td>
+                              <td>20</td>
+                              <td>Frontend Developer</td>
+                              <td>tringuyen@gmail.com</td>
+                              <td>0902000230</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- App body ends -->
+
+          <!-- App footer start -->
+          <div class="app-footer">
+            <span>© Trang quản trị shop Trí Vinh</span>
+          </div>
+          <!-- App footer end -->
+        </div>
+        <!-- App container ends -->
+      </div>
+      <!-- Main container end -->
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- *************
+			************ JavaScript Files *************
+		************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+    <!-- Overlay Scroll JS -->
+    <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+    <!-- Toastify JS -->
+    <script src="assets/vendor/toastify/toastify.js"></script>
+
+    <!-- Apex Charts -->
+    <script src="assets/vendor/apex/apexcharts.min.js"></script>
+    <script src="assets/vendor/apex/custom/home/overview.js"></script>
+    <script src="assets/vendor/apex/custom/home/reachedAudience.js"></script>
+    <script src="assets/vendor/apex/custom/home/social.js"></script>
+    <script src="assets/vendor/apex/custom/home/sparkline.js"></script>
+    <script src="assets/vendor/apex/custom/home/sparkline2.js"></script>
+    <script src="assets/vendor/apex/custom/home/visitors.js"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+      if (localStorage.getItem("user_login_admin_now") === null) {
+        window.location.href = "login.html";
+      }
+      var now_user = JSON.parse(localStorage.getItem("user_login_admin_now"));
+      if (now_user.name === "Đỗ Quang Vinh") {
+        document.getElementById("admin-2-img").style.display = "none";
+        document.getElementById("admin-2-info").style.display = "none";
+        document.getElementById("admin-3-img").style.display = "none";
+        document.getElementById("admin-3-info").style.display = "none";
+        Toastify({
+          text: "Chào mừng admin Đỗ Quang Vinh đã trở lại !",
+          duration: 3000,
+          close: true,
+          avatar: "assets/images/admin-1.jpg",
+          className: "bg-black",
+          offset: {
+            x: 9,
+            y: 65,
+          },
+        }).showToast();
+      } else if (now_user.name === "Nguyễn Cao Đức Trí") {
+        document.getElementById("admin-1-img").style.display = "none";
+        document.getElementById("admin-1-info").style.display = "none";
+        document.getElementById("admin-3-img").style.display = "none";
+        document.getElementById("admin-3-info").style.display = "none";
+        Toastify({
+          text: "Chào mừng admin Nguyễn Cao Đức Trí đã trở lại !",
+          duration: 3000,
+          close: true,
+          avatar: "assets/images/admin-2.jpg",
+          className: "bg-black",
+          offset: {
+            x: 9,
+            y: 65,
+          },
+        }).showToast();
+      } else {
+        document.getElementById("admin-1-img").style.display = "none";
+        document.getElementById("admin-1-info").style.display = "none";
+        document.getElementById("admin-2-img").style.display = "none";
+        document.getElementById("admin-2-info").style.display = "none";
+        document.querySelector("#admin-3-info h6").innerText = now_user.name;
+        document.querySelector("#admin-3-info p").innerText = now_user.username;
+        var message = `Chào mừng admin ${now_user.name} đã trở lại !`;
+        Toastify({
+          text: message,
+          duration: 3000,
+          close: true,
+          avatar: now_user.img,
+          className: "bg-black",
+          offset: {
+            x: 9,
+            y: 65,
+          },
+        }).showToast();
+      }
+    </script>
+  </body>
+</html>

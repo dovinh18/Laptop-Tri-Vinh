@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng ký</title>
+
+    <!-- Meta -->
+    <meta
+      name="description"
+      content="Marketplace for Bootstrap Admin Dashboards"
+    />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="canonical" href="https://www.bootstrap.gallery/" />
+    <meta property="og:url" content="https://www.bootstrap.gallery" />
+    <meta
+      property="og:title"
+      content="Admin Templates - Dashboard Templates | Bootstrap Gallery"
+    />
+    <meta
+      property="og:description"
+      content="Marketplace for Bootstrap Admin Dashboards"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:site_name" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <link rel="stylesheet" href="assets/fonts/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Container start -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-5 col-sm-6 col-12">
+          <form action="index.html" class="my-5">
+            <div class="border rounded-2 p-4 mt-5">
+              <div class="login-form">
+                <a
+                  href="index.html"
+                  class="mb-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="assets/images/MY_LOGO.jpg"
+                    class="img-fluid login-logo"
+                    alt="VT Admin Dashboard"
+                  />
+                </a>
+                <h5 class="fw-bold mb-5 text-center">Tạo tài khoản admin</h5>
+				<div class="mb-3">
+                  <label class="form-label">Tên người dùng</label>
+                  <input
+                    id="input-name"
+                    type="email"
+                    class="form-control"
+                    placeholder="Nhập email của bạn"
+                    required
+                  />
+                  <span id="name-error" style="color: red; display: none;"
+                    ><b>Vui lòng nhập tên người dùng !</b></span
+                  >
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Nhập email của bạn"
+                    required
+                  />
+                  <span id="email-error" style="color: red; display: none;"
+                    ><b>Email không hợp lệ !</b></span
+                  >
+				  <span id="email-exist" style="color: red; display: none;"
+                    ><b>Email đã được sử dụng !</b></span
+                  >
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Mật khẩu</label>
+                  <input
+                    id="password"
+                    type="password"
+                    class="form-control"
+                    placeholder="Nhập mật khẩu của bạn"
+                    required
+                  />
+                  <span id="password-error" style="color: red; display: none"
+                    ><b>Mật khẩu phải từ 8 ký tự !</b></span
+                  >
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Nhập lại mật khẩu</label>
+                  <input
+                    id="confirmPassword"
+                    type="password"
+                    class="form-control"
+                    placeholder="Nhập lại mật khẩu"
+                    required
+                  />
+                  <span
+                    id="confirmPassword-error"
+                    style="color: red; display: none"
+                    ><b>Mật khẩu nhập lại không chính xác !</b></span
+                  >
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="form-check m-0">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="termsConditions"
+                      required
+                    />
+                    <label class="form-check-label" for="termsConditions"
+                      >Tôi đồng ý với tất cả điều khoản sử dụng</label
+                    >
+                  </div>
+                </div>
+                <div class="d-grid py-3 mt-4">
+                  <button
+                    id="signUp-btn"
+                    type="button"
+                    class="btn btn-lg btn-primary"
+                  >
+                    Đăng ký
+                  </button>
+                </div>
+                <div class="text-center py-3">Hoặc liên kết tài khoản với</div>
+                <div class="btn-group w-100">
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    Google
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-primary">
+                    Facebook
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-info">
+                    Twitter
+                  </button>
+                </div>
+                <div class="text-center pt-4">
+                  <span>Bạn đã có tài khoản ?</span>
+                  <a
+                    href="login.html"
+                    class="text-blue text-decoration-underline ms-2"
+                  >
+                    Đăng nhập</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Container end -->
+  </body>
+
+  <script src="./assets/js/validationSignUp.js"></script>
+</html>

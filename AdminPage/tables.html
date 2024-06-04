@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danh sách sản phẩm</title>
+
+    <!-- Meta -->
+    <meta
+      name="description"
+      content="Marketplace for Bootstrap Admin Dashboards"
+    />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="canonical" href="https://www.bootstrap.gallery/" />
+    <meta property="og:url" content="https://www.bootstrap.gallery" />
+    <meta
+      property="og:title"
+      content="Admin Templates - Dashboard Templates | Bootstrap Gallery"
+    />
+    <meta
+      property="og:description"
+      content="Marketplace for Bootstrap Admin Dashboards"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:site_name" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <link rel="stylesheet" href="assets/fonts/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+
+    <!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+    <!-- Scrollbar CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Page wrapper start -->
+    <div class="page-wrapper">
+      <!-- Main container start -->
+      <div class="main-container">
+        <!-- Sidebar wrapper start -->
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div
+            class="app-brand px-3 py-2 d-flex align-items-center justify-content-center"
+          >
+            <a href="index.html">
+              <img
+                src="assets/images/MY_LOGO.jpg"
+                class="logo"
+                alt="Bootstrap Gallery"
+                style="width: 100px"
+              />
+            </a>
+          </div>
+          <!-- App brand ends -->
+
+          <!-- Sidebar menu starts -->
+          <div class="sidebarMenuScroll">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="./index.html">
+                  <i class="bi bi-pie-chart"></i>
+                  <span class="menu-text">Thành viên</span>
+                </a>
+              </li>
+              <li class="active current-page">
+                <a href="tables.html">
+                  <i class="bi bi-border-all"></i>
+                  <span class="menu-text">Danh sách sản phẩm</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-bar-chart-line"></i>
+                  <span class="menu-text">Sales</span>
+                  <span
+                    class="badge border border-danger text-danger rounded-5 ms-2"
+                    >New</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-check-circle"></i>
+                  <span class="menu-text">Subscribers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-telephone"></i>
+                  <span class="menu-text">Contacts</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-box"></i>
+                  <span class="menu-text">FAQ's</span>
+                  <span
+                    class="badge border border-success text-success rounded-5 ms-2"
+                    >New</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-calendar2"></i>
+                  <span class="menu-text">Calendar</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-stickies"></i>
+                  <span class="menu-text">Components</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Accordions</a>
+                  </li>
+                  <li>
+                    <a href="#!">Alerts</a>
+                  </li>
+                  <li>
+                    <a href="#!">Buttons</a>
+                  </li>
+                  <li>
+                    <a href="#!">Badges</a>
+                  </li>
+                  <li>
+                    <a href="#!">Carousel</a>
+                  </li>
+                  <li>
+                    <a href="#!">List Items</a>
+                  </li>
+                  <li>
+                    <a href="#!">Progress Bars</a>
+                  </li>
+                  <li>
+                    <a href="#!">Popovers</a>
+                  </li>
+                  <li>
+                    <a href="#!">Tooltips</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-ui-checks-grid"></i>
+                  <span class="menu-text">Forms</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Basic Form Inputs</a>
+                  </li>
+                  <li>
+                    <a href="#!">Checkbox &amp; Radio</a>
+                  </li>
+                  <li>
+                    <a href="#!">File Input</a>
+                  </li>
+                  <li>
+                    <a href="#!">Validations</a>
+                  </li>
+                  <li>
+                    <a href="#!">Date Time Pickers</a>
+                  </li>
+                  <li>
+                    <a href="#!">Form Layouts</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-gear"></i>
+                  <span class="menu-text">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-postcard"></i>
+                  <span class="menu-text">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-layout-text-window-reverse"></i>
+                  <span class="menu-text">Starter Page</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-code-square"></i>
+                  <span class="menu-text">Cards</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Cards</a>
+                  </li>
+                  <li>
+                    <a href="#!">Advanced Cards</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-pie-chart"></i>
+                  <span class="menu-text">Graphs</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Apex</a>
+                  </li>
+                  <li>
+                    <a href="#!">Morris</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-pin-map"></i>
+                  <span class="menu-text">Maps</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-slash-square"></i>
+                  <span class="menu-text">Tabs</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-terminal"></i>
+                  <span class="menu-text">Modals</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-textarea"></i>
+                  <span class="menu-text">Icons</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-explicit"></i>
+                  <span class="menu-text">Typography</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-upc-scan"></i>
+                  <span class="menu-text">Login/Signup</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Login</a>
+                  </li>
+                  <li>
+                    <a href="#!">Signup</a>
+                  </li>
+                  <li>
+                    <a href="#!">Forgot Password</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-exclamation-diamond"></i>
+                  <span class="menu-text">Page Not Found</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="bi bi-exclamation-octagon"></i>
+                  <span class="menu-text">Maintenance</span>
+                </a>
+              </li>
+              <li class="treeview">
+                <a href="#!">
+                  <i class="bi bi-code-square"></i>
+                  <span class="menu-text">Multi Level</span>
+                </a>
+                <ul class="treeview-menu">
+                  <li>
+                    <a href="#!">Level One Link</a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      Level One Menu
+                      <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                      <li>
+                        <a href="#!">Level Two Link</a>
+                      </li>
+                      <li>
+                        <a href="#!"
+                          >Level Two Menu
+                          <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                          <li>
+                            <a href="#!">Level Three Link</a>
+                          </li>
+                          <li>
+                            <a href="#!">Level Three Link</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Level One Link</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Sidebar menu ends -->
+        </nav>
+        <!-- Sidebar wrapper end -->
+
+        <!-- App container starts -->
+        <div class="app-container">
+          <!-- App header starts -->
+          <div class="app-header d-flex align-items-center">
+            <!-- Toggle buttons start -->
+            <div class="d-flex">
+              <button
+                class="btn btn-outline-primary me-2 toggle-sidebar"
+                id="toggle-sidebar"
+              >
+                <i class="bi bi-text-indent-left fs-5"></i>
+              </button>
+              <button
+                class="btn btn-outline-primary me-2 pin-sidebar"
+                id="pin-sidebar"
+              >
+                <i class="bi bi-text-indent-left fs-5"></i>
+              </button>
+            </div>
+            <!-- Toggle buttons end -->
+
+            <!-- App brand sm start -->
+            <div class="app-brand-sm d-md-none d-sm-block">
+              <a href="#!">
+                <img
+                  src="assets/images/logo-sm.svg"
+                  class="logo"
+                  alt="Bootstrap Gallery"
+                />
+              </a>
+            </div>
+            <!-- App brand sm end -->
+
+            <!-- Breadcrumb start -->
+            <ol class="breadcrumb d-none d-lg-flex ms-3">
+              <li class="breadcrumb-item">
+                <i class="bi bi-house lh-1"></i>
+                <a href="#!">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item text-secondary">Danh sách sản phẩm</li>
+            </ol>
+            <!-- Breadcrumb end -->
+
+            <!-- App header actions start -->
+            <div class="header-actions">
+              <div class="dropdown ms-2">
+                <a
+                  id="userSettings"
+                  class="dropdown-toggle d-flex py-2 align-items-center text-decoration-none"
+                  href="#!"
+                >
+                  <img
+                    src="assets/images/admin-1.jpg"
+                    class="rounded-2 img-3x"
+                    alt="Bootstrap Gallery"
+                  />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                  <div class="p-3 border-bottom mb-2">
+                    <h6 class="mb-1">Đỗ Vinh</h6>
+                    <p class="m-0 small opacity-50">dovinh8082@gmail.com</p>
+                  </div>
+                  <a class="dropdown-item d-flex align-items-center" href="#!"
+                    ><i class="bi bi-person fs-4 me-2"></i>Hồ sơ</a
+                  >
+                  <a class="dropdown-item d-flex align-items-center" href="#!"
+                    ><i class="bi bi-gear fs-4 me-2"></i>Cài đặt</a
+                  >
+                  <div class="d-grid p-3 py-2">
+                    <a class="btn btn-danger" href="./login.html" onclick="localStorage.getItem('user_login_admin_now').clear()">Đăng xuất</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- App header actions end -->
+          </div>
+
+          <!-- App body starts -->
+          <div class="app-body">
+            <!-- Container starts -->
+            <div class="container-fluid">
+              <!-- Row start -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-lg-between">
+                      <h4 class="card-title">Danh sách sản phẩm hiện có</h4>
+                      <div class="btn-group">
+                        <a
+                          id="delete-action"
+                          class="btn btn-danger btn-icon btn-sm mb-1"
+                          href="#"
+                          ><i class="bi bi-trash"></i>
+                        </a>
+                        <span>&nbsp;&nbsp;&nbsp;</span>
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-success btn-icon btn-sm mb-1"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          <i class="bi-plus-square"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="staticBackdrop"
+                          data-bs-keyboard="false"
+                          tabindex="-1"
+                          aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title"
+                                  id="staticBackdropLabel"
+                                >
+                                  Thêm sản phẩm
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="code_item" class="form-label"
+                                      >Mã sản phẩm</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control value-insert"
+                                      id="code_item"
+                                      required
+                                    />
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="name_item" class="form-label"
+                                      >Tên sản phẩm</label
+                                    >
+                                    <input
+                                      type="text"
+                                      id="name_item"
+                                      class="form-control value-insert"
+                                      required
+                                    />
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="cost_item" class="form-label"
+                                      >Giá trên mỗi sản phẩm</label
+                                    >
+                                    <input
+                                      type="number"
+                                      id="cost_item"
+                                      class="form-control value-insert"
+                                      required
+                                    />
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label
+                                      for="quantity_item"
+                                      class="form-label"
+                                      >Tổng số sản phẩm</label
+                                    >
+                                    <input
+                                      type="number"
+                                      id="quantity_item"
+                                      class="form-control value-insert"
+                                      required
+                                    />
+                                  </div>
+                                  <div class="mb-3">
+                                    <label
+                                      for="productor_item"
+                                      class="form-label"
+                                      >Hãng sản xuất</label
+                                    >
+                                    <input
+                                      type="text"
+                                      id="productor_item"
+                                      class="form-control value-insert"
+                                      required
+                                    />
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="images_item" class="form-label"
+                                      >Hình ảnh mô tả</label
+                                    >
+                                    <img
+                                      id="images_item_value"
+                                      src="#"
+                                      style="width: 30px"
+                                    />
+                                    <input
+                                      type="file"
+                                      id="images_item"
+                                      class="form-control value-insert"
+                                      required
+                                    />
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Đóng
+                                </button>
+                                <button
+                                  id="btn-insert"
+                                  type="submit"
+                                  class="btn btn-primary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Thêm
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="border border-dark rounded-3">
+                        <div class="table-responsive">
+                          <table class="table align-middle table-hover m-0">
+                            <thead>
+                              <tr>
+                                <th>Chọn</th>
+                                <th>#</th>
+                                <th>Mã sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Trạng thái</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Hãng sản xuất</th>
+                                <th>Ngày đăng bán</th>
+                                <th>Hình ảnh</th>
+                              </tr>
+                            </thead>
+                            <tbody id="list-all-item">
+                              <tr id="row-info-item-1">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-1"
+                                  />
+                                </td>
+                                <td>1</td>
+                                <td>LT001</td>
+                                <td>
+                                  Laptop Gaming Acer Nitro 5 Tiger AN515-58-52SP
+                                  NH.QFHSV.001 (Core™ i5-12500H | 8GB | 512GB |
+                                  RTX™ 3050 4GB | 15.6 inch FHD | Win 11 | Đen)
+                                </td>
+                                <td>Đang giảm giá</td>
+                                <td>18.199.000đ</td>
+                                <td>50</td>
+                                <td>ACER</td>
+                                <td>15/10/2022</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/250_40484_acer_nitro_5_tiger_an515_58_52sp_nh_qfhsv_001_3s1.jpg"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 2-->
+                              <tr id="row-info-item-2">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-2"
+                                  />
+                                </td>
+                                <td>2</td>
+                                <td>LT002</td>
+                                <td>
+                                  Laptop Acer Aspire 3 A315-59-51X8 NX.K6TSV.00F
+                                  (Intel Core i5-1235U | 8GB | 512GB | Intel UHD
+                                  | 15.6 inch FHD | Win 11 | Bạc)
+                                </td>
+                                <td>Đang giảm giá</td>
+                                <td>10.799.000đ</td>
+                                <td>50</td>
+                                <td>ACER</td>
+                                <td>15/10/2022</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="assets/images/Laptop/acer-aspire-3-a315.jpg"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 3-->
+                              <tr id="row-info-item-3">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-3"
+                                  />
+                                </td>
+                                <td>3</td>
+                                <td>KB001</td>
+                                <td>
+                                  Bàn phím AKKO 3098 RF Dracula Castle Akko
+                                  Switch V3 Cream Blue
+                                </td>
+                                <td>Đang giảm giá</td>
+                                <td>1.690.000đ</td>
+                                <td>50</td>
+                                <td>AKKO</td>
+                                <td>15/10/2022</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/48a02cc4be7e540d38833b6a29b6e4ce.jpg"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 4-->
+                              <tr id="row-info-item-4">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-4"
+                                  />
+                                </td>
+                                <td>4</td>
+                                <td>MH001</td>
+                                <td>
+                                  Màn hình AOC Q24G2 24" IPS 2K 165Hz G-Sync
+                                  chuyên game
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>5.090.000đ</td>
+                                <td>50</td>
+                                <td>AOC</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/màn hình.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 5-->
+                              <tr id="row-info-item-5">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-5"
+                                  />
+                                </td>
+                                <td>5</td>
+                                <td>LT003</td>
+                                <td>
+                                  Laptop ASUS TUF Gaming F15 FX506HF-HN078W
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>17.290.000đ</td>
+                                <td>50</td>
+                                <td>ASUS</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP1.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 6-->
+                              <tr id="row-info-item-6">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-6"
+                                  />
+                                </td>
+                                <td>6</td>
+                                <td>LT004</td>
+                                <td>
+                                  Laptop ASUS VivoBook S 14 FLIP TP3402VA-LZ025W
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>11.490.000đ</td>
+                                <td>50</td>
+                                <td>ASUS</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP3.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 7-->
+                              <tr id="row-info-item-7">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-7"
+                                  />
+                                </td>
+                                <td>7</td>
+                                <td>LT005</td>
+                                <td>
+                                  Laptop gaming Lenovo LOQ 15IAX9 83GS000FVN
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>17.990.000đ</td>
+                                <td>50</td>
+                                <td>LENOVO</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/lapNOVO.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 8-->
+                              <tr id="row-info-item-8">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-8"
+                                  />
+                                </td>
+                                <td>8</td>
+                                <td>LT006</td>
+                                <td>
+                                  Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>19.490.000đ</td>
+                                <td>50</td>
+                                <td>ASUS</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP4.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 9-->
+                              <tr id="row-info-item-9">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-9"
+                                  />
+                                </td>
+                                <td>9</td>
+                                <td>LT007</td>
+                                <td>Macbook Air M3 13 inch 2024 8GB - 256GB</td>
+                                <td>Còn hàng</td>
+                                <td>27.290.000đ</td>
+                                <td>50</td>
+                                <td>APPLE</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP2.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 10-->
+                              <tr id="row-info-item-10">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-10"
+                                  />
+                                </td>
+                                <td>10</td>
+                                <td>LT008</td>
+                                <td>
+                                  Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>20.190.000đ</td>
+                                <td>50</td>
+                                <td>ASUS</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP5.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 11-->
+                              <tr id="row-info-item-11">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-11"
+                                  />
+                                </td>
+                                <td>11</td>
+                                <td>LT009</td>
+                                <td>
+                                  Laptop ASUS TUF Gaming F15 FX506HF-HN078W
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>17.290.000đ</td>
+                                <td>50</td>
+                                <td>ASUS</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP1.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 12-->
+                              <tr id="row-info-item-12">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-12"
+                                  />
+                                </td>
+                                <td>12</td>
+                                <td>LT010</td>
+                                <td>
+                                  Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>11.490.000đ</td>
+                                <td>50</td>
+                                <td>ASUS</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Fix1/LAP3.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 13-->
+                              <tr id="row-info-item-13">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-13"
+                                  />
+                                </td>
+                                <td>13</td>
+                                <td>MS001</td>
+                                <td>
+                                  Chuột Logitech G Pro X Superlight 2 Magenta
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>3.690.000đ</td>
+                                <td>100</td>
+                                <td>LOGITECH</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/Chuột logetech.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 14-->
+                              <tr id="row-info-item-14">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-14"
+                                  />
+                                </td>
+                                <td>14</td>
+                                <td>MS002</td>
+                                <td>Chuột Rapoo Không dây V300SE Black</td>
+                                <td>Còn hàng</td>
+                                <td>990.000đ</td>
+                                <td>50</td>
+                                <td>RAPOO</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/Chuot rampoo.jpg"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 15-->
+                              <tr id="row-info-item-15">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-15"
+                                  />
+                                </td>
+                                <td>15</td>
+                                <td>HP001</td>
+                                <td>
+                                  Tai nghe Steelseries Arctis Nova 7 Dragon
+                                  Edition
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>5.990.000đ</td>
+                                <td>50</td>
+                                <td>NOVA</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/tainghenova7.jpg"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 16-->
+                              <tr id="row-info-item-16">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-16"
+                                  />
+                                </td>
+                                <td>16</td>
+                                <td>CH001</td>
+                                <td>
+                                  Ghế Ergonomic Warrior Hero series WEC502 Grey
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>2.690.000đ</td>
+                                <td>50</td>
+                                <td>EWH</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/ghewarior.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 17-->
+                              <tr id="row-info-item-17">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-17"
+                                  />
+                                </td>
+                                <td>17</td>
+                                <td>CH002</td>
+                                <td>
+                                  Ghế Gaming cao cấp lưng tựa ngả có gác chân
+                                  GVP-06
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>1.950.000đ</td>
+                                <td>50</td>
+                                <td>GVP</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/gheGVP.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 18-->
+                              <tr id="row-info-item-18">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-18"
+                                  />
+                                </td>
+                                <td>18</td>
+                                <td>CH003</td>
+                                <td>
+                                  Ghế chơi Game E-DRA Hercules EGC203 Pro Black
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>3.690.000đ</td>
+                                <td>50</td>
+                                <td>E-DRA</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/ghe e-dra.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 19-->
+                              <tr id="row-info-item-19">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-19"
+                                  />
+                                </td>
+                                <td>19</td>
+                                <td>HD001</td>
+                                <td>Ổ Cứng SSD Verbatim Vi550 256GB Sata3</td>
+                                <td>Còn hàng</td>
+                                <td>590.000đ</td>
+                                <td>50</td>
+                                <td>VERBATIM</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/ssdvi550.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                              <!--ITEM 20-->
+                              <tr id="row-info-item-20">
+                                <td>
+                                  <input
+                                    class="choose-to-delete"
+                                    type="checkbox"
+                                    value="row-info-item-20"
+                                  />
+                                </td>
+                                <td>20</td>
+                                <td>HD002</td>
+                                <td>
+                                  LỔ Cứng SSD WD Blue SN580 500GB M.2 NVMe PCIe
+                                  Gen 4 (WDS500G3B0E)
+                                </td>
+                                <td>Còn hàng</td>
+                                <td>1.490.000đ</td>
+                                <td>50</td>
+                                <td>WD</td>
+                                <td>15/07/2023</td>
+                                <td>
+                                  <img
+                                    class="rounded-circle img-3x me-2"
+                                    src="./assets/images/Laptop/ssd580.webp"
+                                    alt="Bootstrap Gallery"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Row end -->
+            </div>
+            <!-- Container ends -->
+          </div>
+          <!-- App body ends -->
+
+          <!-- App footer start -->
+          <div class="app-footer">
+            <span>© Trang quản trị shop Trí Vinh</span>
+          </div>
+          <!-- App footer end -->
+        </div>
+        <!-- App container ends -->
+      </div>
+      <!-- Main container end -->
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- *************
+			************ JavaScript Files *************
+		************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+    <!-- Overlay Scroll JS -->
+    <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/custom.js"></script>
+    <script src="./assets/js/list-item-action-delete.js"></script>
+    <script src="./assets/js/list-item-action-insert.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  </body>
+</html>

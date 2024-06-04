@@ -1,0 +1,3838 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="MediaCenter, Template, eCommerce" />
+    <meta name="robots" content="all" />
+    <title>Shop Laptop Trí Vinh</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css" />
+
+    <!-- Customizable CSS -->
+    <link rel="stylesheet" href="assets\css\main.css" />
+    <link rel="stylesheet" href="assets\css\blue.css" />
+    <link rel="stylesheet" href="assets\css\owl.carousel.css" />
+    <link rel="stylesheet" href="assets\css\owl.transitions.css" />
+    <link rel="stylesheet" href="assets\css\animate.min.css" />
+    <link rel="stylesheet" href="assets\css\rateit.css" />
+    <link rel="stylesheet" href="assets\css\bootstrap-select.min.css" />
+
+    <!-- Icons/Glyphs -->
+    <link rel="stylesheet" href="assets\css\font-awesome.css" />
+
+    <!-- Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body class="cnt-home">
+    <!-- ============================================== HEADER ============================================== -->
+    <header class="header-style-1">
+      <br />
+      <div class="main-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+              <!-- ============================================================= LOGO ============================================================= -->
+              <div class="logo">
+                <a href="home.html">
+                  <img
+                    src="assets/images/MY_LOGO.jpg"
+                    alt="logo"
+                    style="
+                      width: 100px;
+                      height: 100px;
+                      margin-top: 28px;
+                      border-radius: 50%;
+                    "
+                  />
+                </a>
+              </div>
+              <!-- /.logo -->
+              <!-- ============================================================= LOGO : END ============================================================= -->
+            </div>
+            <!-- /.logo-holder -->
+
+            <div class="col-xs-12 col-sm-12 col-md-7 top-search-holder">
+              <!-- /.contact-row -->
+              <!-- ============================================================= SEARCH AREA ============================================================= -->
+              <div class="search-area">
+                <form>
+                  <div class="control-group">
+                    <input
+                      id="NameItem"
+                      class="search-field"
+                      placeholder="Bạn muốn tìm kiếm sảm phẩm nào ?"
+                    />
+                    <a
+                      id="searchItemCustom"
+                      data-toggle="modal"
+                      data-target="#dialog-search-result"
+                      class="search-button"
+                      href="#"
+                    ></a>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="dialog-search-result"
+                    tabindex="-1"
+                    aria-labelledby="search-result-area"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="search-result-area">
+                            Kết quả tìm kiếm
+                          </h3>
+                          <br>
+                          <p style="color: blue;">&nbsp;&nbsp;&nbsp;<b id="total-item-result"></b></p>
+                        </div>
+                        <div class="modal-body" id="search-result-body">
+                          <table class="table">
+                            <tbody id="all-item-search-result">
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="submit"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Hủy
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /.search-area -->
+              <!-- ============================================================= SEARCH AREA : END ============================================================= -->
+            </div>
+            <!-- /.top-search-holder -->
+
+            <div
+              class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row"
+            >
+              <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+
+              <div class="dropdown dropdown-cart">
+                <a
+                  id="cart-redirect"
+                  href="./shopping-cart.html"
+                  class="lnk-cart"
+                  data-toggle="popover"
+                  data-trigger="hover"
+                  data-content="Giỏ hàng"
+                  data-placement="bottom"
+                >
+                  <div class="items-cart-inner">
+                    <div class="total-price-basket" style="position: relative;">
+                      <i class="glyphicon glyphicon-shopping-cart"></i>
+                      <span id="total-sc-item" class="badge badge-light" style="position: absolute; top: -6px;">0</span>
+                    </div>
+                  </div>
+                </a>
+                <span>&nbsp;&nbsp;</span>
+                <a
+                  id="wishlist-redirect"
+                  href="./my-wishlist.html"
+                  class="lnk-cart"
+                  data-toggle="popover"
+                  data-trigger="hover"
+                  data-content="Sản phẩm yêu thích"
+                  data-placement="bottom"
+                >
+                  <div class="items-cart-inner">
+                    <div class="total-price-basket" style="position: relative;">
+                      <i class="glyphicon glyphicon-heart"></i>
+                      <span id="total-wl-item" class="badge badge-light" style="position: absolute; top: -6px;">0</span>
+                    </div>
+                  </div>
+                </a>
+                <span>&nbsp;&nbsp;</span>
+                <a
+                  id="account-redirect"
+                  href="#"
+                  class="dropdown-toggle lnk-cart"
+                  data-toggle="dropdown"
+                  data-trigger="hover"
+                  data-content="Tài khoản"
+                >
+                  <div class="items-cart-inner">
+                    <div class="total-price-basket">
+                      <i class="glyphicon glyphicon-user"></i>
+                    </div>
+                  </div>
+                </a>
+                <ul id="login-status" class="dropdown-menu">
+                  <li><a href="./user-profile.html">Thông tin tài khoản</a></li>
+                  <li><a href="./sign-in.html">Chuyển tài khoản khác</a></li>
+                  <li><a href="./sign-in.html">Đăng nhập</a></li>
+                  <li><a href="./sign-up.html">Đăng ký</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./sign-in.html">Đăng xuất</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================== NAVBAR ============================================== -->
+      <div class="header-nav animate-dropdown">
+        <div class="container">
+          <div class="yamm navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button
+                data-target="#mc-horizontal-menu-collapse"
+                data-toggle="collapse"
+                class="navbar-toggle collapsed"
+                type="button"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="nav-bg-class">
+              <div
+                class="navbar-collapse collapse"
+                id="mc-horizontal-menu-collapse"
+              >
+                <div class="nav-outer">
+                  <ul class="nav navbar-nav">
+                    <li class="active dropdown yamm-fw">
+                      <a
+                        href="home.html"
+                        data-hover="dropdown"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        >TRANG CHỦ</a
+                      >
+                    </li>
+                    <li class="dropdown yamm mega-menu">
+                      <a
+                        href="home.html"
+                        data-hover="dropdown"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        >HÃNG SẢN XUẤT</a
+                      >
+                      <ul class="dropdown-menu container">
+                        <li>
+                          <div class="yamm-content">
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title"><a href="#">ACER</a></h2>
+                                <h2 class="title"><a href="#">LENOVO</a></h2>
+                                <h2 class="title"><a href="#">HP</a></h2>
+                              </div>
+                              <!-- /.col -->
+
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title"><a href="#">ASUS</a></h2>
+                                <h2 class="title"><a href="#">APPLE</a></h2>
+                                <h2 class="title"><a href="#">DELL</a></h2>
+                              </div>
+                              <!-- /.col -->
+
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title"><a href="#">MICROSOFT</a></h2>
+                                <h2 class="title"><a href="#">RAZER</a></h2>
+                                <h2 class="title"><a href="#">MSI</a></h2>
+                              </div>
+                              <!-- /.col -->
+
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title"><a href="#">LG</a></h2>
+                                <h2 class="title"><a href="#">HUAWEI</a></h2>
+                                <h2 class="title"><a href="#">GIGABYTE</a></h2>
+                              </div>
+
+                              <!-- /.yamm-content -->
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown mega-menu">
+                      <a
+                        href="category.html"
+                        data-hover="dropdown"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        >LOẠI RAM<span class="menu-label hot-menu hidden-xs"
+                          >hot</span
+                        >
+                      </a>
+                      <ul class="dropdown-menu container">
+                        <li>
+                          <div class="yamm-content">
+                            <div class="row">
+                              <div
+                                class="col-xs-12 col-sm-12 col-md-2 col-menu"
+                              >
+                                <h2 class="title">Kingston</h2>
+                                <ul class="links">
+                                  <li><a href="#">4GB</a></li>
+                                  <li><a href="#">8GB</a></li>
+                                  <li><a href="#">16GB</a></li>
+                                  <li><a href="#">32GB</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+
+                              <div
+                                class="col-xs-12 col-sm-12 col-md-2 col-menu"
+                              >
+                                <h2 class="title">Gigabyte</h2>
+                                <ul class="links">
+                                  <li><a href="#">4GB</a></li>
+                                  <li><a href="#">8GB</a></li>
+                                  <li><a href="#">16GB</a></li>
+                                  <li><a href="#">32GB</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+
+                              <div
+                                class="col-xs-12 col-sm-12 col-md-2 col-menu"
+                              >
+                                <h2 class="title">Kingmax</h2>
+                                <ul class="links">
+                                  <li><a href="#">4GB</a></li>
+                                  <li><a href="#">8GB</a></li>
+                                  <li><a href="#">16GB</a></li>
+                                  <li><a href="#">32GB</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+                              <div
+                                class="col-xs-12 col-sm-12 col-md-2 col-menu"
+                              >
+                                <h2 class="title">HP</h2>
+                                <ul class="links">
+                                  <li><a href="#">4GB</a></li>
+                                  <li><a href="#">8GB</a></li>
+                                  <li><a href="#">16GB</a></li>
+                                  <li><a href="#">32GB</a></li>
+                                </ul>
+                              </div>
+                              <div
+                                class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"
+                              >
+                                <a href="#"
+                                  ><img
+                                    alt=""
+                                    src="assets\images\banners\banner-side.png"
+                                /></a>
+                              </div>
+                            </div>
+                            <!-- /.row -->
+                          </div>
+                          <!-- /.yamm-content -->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown hidden-sm">
+                      <a href="#!"
+                        >LOẠI CPU<span class="menu-label new-menu hidden-xs"
+                          >new</span
+                        >
+                      </a>
+                    </li>
+                    <li class="dropdown hidden-sm">
+                      <a href="#!">LOẠI MÀN HÌNH</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="./category.html">SẢN PHẨM</a>
+                    </li>
+                    <li class="dropdown"><a href="#!">NHU CẦU</a></li>
+                    <li class="dropdown"><a href="./faq.html">FAQ</a></li>
+                  </ul>
+                  <!-- /.navbar-nav -->
+                  <div class="clearfix"></div>
+                </div>
+                <!-- /.nav-outer -->
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.nav-bg-class -->
+          </div>
+          <!-- /.navbar-default -->
+        </div>
+        <!-- /.container-class -->
+      </div>
+      <!-- /.header-nav -->
+      <!-- ============================================== NAVBAR : END ============================================== -->
+    </header>
+
+    <!-- ============================================== HEADER : END ============================================== -->
+    <div class="body-content outer-top-xs" id="top-banner-and-menu">
+      <div class="container">
+        <div class="row">
+          <!-- ============================================== SIDEBAR ============================================== -->
+          <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
+            <!-- ============================================== HOT DEALS ============================================== -->
+            <div class="sidebar-widget hot-deals wow fadeInUp outer-bottom-xs">
+              <h3 class="section-title">CỰC SỐC</h3>
+              <div
+                class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-ss"
+              >
+                <div class="item">
+                  <div class="products">
+                    <div class="hot-deal-wrapper">
+                      <div class="image">
+                        <img
+                          src="assets/images/Laptop/250_40484_acer_nitro_5_tiger_an515_58_52sp_nh_qfhsv_001_3s1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="sale-offer-tag">
+                        <span
+                          >35%<br />
+                          off</span
+                        >
+                      </div>
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper">
+                          <div class="date box">
+                            <span id="dayTime" class="key">120</span>
+                            <span class="value">Days</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="hour box">
+                            <span id="hoursTime" class="key">20</span>
+                            <span class="value">HRS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="minutes box">
+                            <span id="minutesTime" class="key">36</span>
+                            <span class="value">MINS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper hidden-md">
+                          <div class="seconds box">
+                            <span id="secondTime" class="key">59</span>
+                            <span class="value">SEC</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.hot-deal-wrapper -->
+
+                    <div class="product-info text-left m-t-20">
+                      <h3 class="name">
+                        <a
+                          id="item-a-1"
+                          href="detail.html"
+                          onclick="loadDetailItem('Laptop Gaming Acer Nitro 5 Tiger AN515-58-52SP NH.QFHSV.001 (Core™ i5-12500H | 8GB | 512GB | RTX™ 3050 4GB | 15.6 inch FHD | Win 11 | Đen)')"
+                        >
+                          Laptop Gaming Acer Nitro 5 Tiger AN515-58-52SP
+                          NH.QFHSV.001 (Core™ i5-12500H | 8GB | 512GB | RTX™
+                          3050 4GB | 15.6 inch FHD | Win 11 | Đen)</a
+                        >
+                      </h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="product-price">
+                        <span class="price"> 18.199.000 đ </span>
+                        <span class="price-before-discount">27.999.000 đ</span>
+                      </div>
+                      <!-- /.product-price -->
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="products">
+                    <div class="hot-deal-wrapper">
+                      <div class="image">
+                        <img
+                          src="assets/images/Laptop/acer-aspire-3-a315.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="sale-offer-tag">
+                        <span
+                          >35%<br />
+                          off</span
+                        >
+                      </div>
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper">
+                          <div class="date box">
+                            <span id="dayTime2" class="key">120</span>
+                            <span class="value">Ngày</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="hour box">
+                            <span id="hoursTime2" class="key">20</span>
+                            <span class="value">Giờ</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="minutes box">
+                            <span id="minutesTime2" class="key">36</span>
+                            <span class="value">Phút</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper hidden-md">
+                          <div class="seconds box">
+                            <span id="secondTime2" class="key">59</span>
+                            <span class="value">Giây</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.hot-deal-wrapper -->
+
+                    <div class="product-info text-left m-t-20">
+                      <h3 class="name">
+                        <a
+                          href="detail.html"
+                          onclick="loadDetailItem('Laptop Acer Aspire 3 A315-59-51X8 NX.K6TSV.00F (Intel Core i5-1235U | 8GB | 512GB | Intel UHD | 15.6 inch FHD | Win 11 | Bạc)')"
+                          >Laptop Acer Aspire 3 A315-59-51X8 NX.K6TSV.00F (Intel
+                          Core i5-1235U | 8GB | 512GB | Intel UHD | 15.6 inch
+                          FHD | Win 11 | Bạc)</a
+                        >
+                      </h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="product-price">
+                        <span class="price"> 10.799.000 đ </span>
+                        <span class="price-before-discount">17.999.000 đ</span>
+                      </div>
+                      <!-- /.product-price -->
+                    </div>
+                    <!-- /.product-info -->
+                  </div>
+                </div>
+
+                <!-- /.product-info -->
+
+                <div class="item">
+                  <div class="products">
+                    <div class="hot-deal-wrapper">
+                      <div class="image">
+                        <img
+                          src="./assets/images/Laptop/48a02cc4be7e540d38833b6a29b6e4ce.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="sale-offer-tag">
+                        <span
+                          >Sale<br />
+                          30%</span
+                        >
+                      </div>
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper">
+                          <div class="date box">
+                            <span id="dayTime3" class="key">120</span>
+                            <span class="value">Ngày</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="hour box">
+                            <span id="hoursTime3" class="key">20</span>
+                            <span class="value">Giờ</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="minutes box">
+                            <span id="minutesTime3" class="key">36</span>
+                            <span class="value">Phút</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper hidden-md">
+                          <div class="seconds box">
+                            <span id="secondTime3" class="key">59</span>
+                            <span class="value">Giây</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.hot-deal-wrapper -->
+
+                    <div class="product-info text-left m-t-20">
+                      <h3 class="name">
+                        <a
+                          href="detail.html"
+                          onclick="loadDetailItem('Bàn phím AKKO 3098 RF Dracula Castle Akko Switch V3 Cream Blue')"
+                          >Bàn phím AKKO 3098 RF Dracula Castle Akko Switch V3
+                          Cream Blue</a
+                        >
+                      </h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="product-price">
+                        <span class="price"> 1.690.000₫ </span>
+                        <span class="price-before-discount"> 2.090.000₫ </span>
+                      </div>
+                      <!-- /.product-price -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.sidebar-widget -->
+            </div>
+            <!-- ============================================== HOT DEALS: END ============================================== -->
+
+            <!-- ============================================== SPECIAL OFFER ============================================== -->
+
+            <div class="sidebar-widget outer-bottom-small wow fadeInUp">
+              <h3 class="section-title">Sản phẩm đặc biệt</h3>
+              <div class="sidebar-widget-body outer-top-xs">
+                <div
+                  class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs"
+                >
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Laptop/màn hình.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Màn hình AOC Q24G2 24 IPS 2K 165Hz G-Sync chuyên game')"
+                                    >Màn hình AOC Q24G2 24 IPS 2K 165Hz G-Sync
+                                    chuyên game</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 5.090.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Laptop/ManHinhVA229.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Màn hình ViewSonic VA2209-H 22 IPS FHD 100Hz viền mỏng')"
+                                    >Màn hình ViewSonic VA2209-H 22 IPS FHD
+                                    100Hz viền mỏng</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 1.850.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Laptop/RAMPNY.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('RAM PNY XLR8 1x8GB 3200MHz DDR4 LONGDIMM (MD8GD4320016XR)')"
+                                    >RAM PNY XLR8 1x8GB 3200MHz DDR4 LONGDIMM
+                                    (MD8GD4320016XR)</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 590.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP1.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX506HF-HN078W')"
+                                    >Laptop ASUS TUF Gaming F15
+                                    FX506HF-HN078W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 17.950.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP2.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Macbook Air M3 13 inch 2024 8GB - 256GB')"
+                                    >Macbook Air M3 13 inch 2024 8GB - 256GB</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 27.890.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP3.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS VivoBook S 14 FLIP TP3402VA-LZ025W')"
+                                    >Laptop ASUS VivoBook S 14 FLIP
+                                    TP3402VA-LZ025W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 12.000.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP4.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W')"
+                                    >Laptop ASUS TUF Gaming F15
+                                    FX507ZC4-HN074W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 22.990.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP5.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop Lenovo LOQ 15IAX9 83GS001RVN')"
+                                    >Laptop Lenovo LOQ 15IAX9 83GS001RVN</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 21.550.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP6.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop MSI Gaming GF63 12UC-887VN')"
+                                    >Laptop MSI Gaming GF63 12UC-887VN</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 20.190.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.sidebar-widget-body -->
+            </div>
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== SPECIAL OFFER : END ============================================== -->
+            <!-- ============================================== PRODUCT TAGS ============================================== -->
+            <div class="sidebar-widget product-tag wow fadeInUp">
+              <h3 class="section-title">Đề xuất</h3>
+              <div class="sidebar-widget-body outer-top-xs">
+                <div class="tag-list">
+                  <a class="item" title="Phone" href="category.html">Laptop</a>
+                  <a class="item active" title="Vest" href="category.html"
+                    >Màn hình</a
+                  >
+                  <a class="item" title="Smartphone" href="category.html"
+                    >Chuột</a
+                  >
+                  <a class="item" title="Furniture" href="category.html">RAM</a>
+                  <a class="item" title="T-shirt" href="category.html"
+                    >Bàn phím</a
+                  >
+                  <a class="item" title="Sweatpants" href="category.html"
+                    >Ghế Gaming</a
+                  >
+                  <a class="item" title="Sneaker" href="category.html"
+                    >Bàn Gaming</a
+                  >
+                  <a class="item" title="Toys" href="category.html">Toys</a>
+                  <a class="item" title="Rose" href="category.html">Ổ cứng</a>
+                </div>
+                <!-- /.tag-list -->
+              </div>
+              <!-- /.sidebar-widget-body -->
+            </div>
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== PRODUCT TAGS : END ============================================== -->
+            <!-- ============================================== SPECIAL DEALS ============================================== -->
+
+            <div class="sidebar-widget outer-bottom-small wow fadeInUp">
+              <h3 class="section-title">Bán chạy nhất</h3>
+              <div class="sidebar-widget-body outer-top-xs">
+                <div
+                  class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs"
+                >
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP1.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX506HF-HN078W')"
+                                    >Laptop ASUS TUF Gaming F15
+                                    FX506HF-HN078W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 17.290.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Laptop/lapNOVO.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop gaming Lenovo LOQ 15IAX9 83GS000FVN')"
+                                    >Laptop gaming Lenovo LOQ 15IAX9
+                                    83GS000FVN</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 17.990.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP2.webp"
+                                      alt="image"
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Macbook Air M3 13 inch 2024 8GB - 256GB')"
+                                    >Macbook Air M3 13 inch 2024 8GB - 256GB</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 27.290.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP3.webp"
+                                      alt="images"
+                                    />
+                                    <div class="zoom-overlay"></div>
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS VivoBook S 14 FLIP TP3402VA-LZ025W')"
+                                    >Laptop ASUS VivoBook S 14 FLIP
+                                    TP3402VA-LZ025W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 11.490.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP4.webp"
+                                      alt=""
+                                    />
+                                    <div class="zoom-overlay"></div>
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W')"
+                                    >Laptop ASUS TUF Gaming F15
+                                    FX507ZC4-HN074W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 19.490.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="./assets/images/Fix1/LAP5.webp"
+                                      alt="image"
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="detail.html"
+                                    onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W')"
+                                    >Laptop ASUS TUF Gaming F15
+                                    FX507ZC4-HN074W</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 20.190.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.sidebar-widget-body -->
+            </div>
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== SPECIAL DEALS : END ============================================== -->
+            <!-- ============================================== NEWSLETTER ============================================== -->
+            <div
+              class="sidebar-widget newsletter wow fadeInUp outer-bottom-small"
+            >
+              <h3 class="section-title">Tin tức mới</h3>
+              <div class="sidebar-widget-body outer-top-xs">
+                <p>Đăng nhập để xem tin tức mới nhất</p>
+                <form>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail1"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      placeholder="Đăng nhập để xem tin tức mới nhất"
+                    />
+                  </div>
+                  <button class="btn btn-primary">Đăng kí</button>
+                </form>
+              </div>
+              <!-- /.sidebar-widget-body -->
+            </div>
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== NEWSLETTER: END ============================================== -->
+
+            <!-- ============================================== Testimonials============================================== -->
+            <div class="sidebar-widget wow fadeInUp outer-top-vs">
+              <div id="advertisement" class="advertisement">
+                <div class="item">
+                  <div class="avatar">
+                    <img
+                      src="./assets/images/Laptop/lapNOVO.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="testimonials">
+                    <em>"</em> ASUS PRIME H610M-A Wifi DDR4 là một trong những
+                    dòng mainboard được chắt lọc các yếu tố thiết yếu của nền
+                    tảng Intel mới nhất và kết hợp chúng để tạo thành một sản
+                    phẩm hoàn hảo trong phân khúc tầm trung. <em>"</em>
+                  </div>
+                  <div class="clients_author">
+                    By VT <span>Công ty VT</span>
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item">
+                  <div class="avatar">
+                    <img
+                      src="./assets/images/Laptop/lapasus.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="testimonials">
+                    <em>"</em> ASUS PRIME H610M-A Wifi DDR4 là một trong những
+                    dòng mainboard được chắt lọc các yếu tố thiết yếu của nền
+                    tảng Intel mới nhất và kết hợp chúng để tạo thành một sản
+                    phẩm hoàn hảo trong phân khúc tầm trung. <em>"</em>
+                  </div>
+                  <div class="clients_author">
+                    By VT <span>Công ty VT</span>
+                  </div>
+                </div>
+                <!-- /.item -->
+
+                <div class="item">
+                  <div class="avatar">
+                    <img
+                      src="./assets/images/Laptop/lapasus2.webp"
+                      alt="Image"
+                    />
+                  </div>
+                  <div class="testimonials">
+                    <em>"</em> ASUS PRIME H610M-A Wifi DDR4 là một trong những
+                    dòng mainboard được chắt lọc các yếu tố thiết yếu của nền
+                    tảng Intel mới nhất và kết hợp chúng để tạo thành một sản
+                    phẩm hoàn hảo trong phân khúc tầm trung. <em>"</em>
+                  </div>
+                  <div class="clients_author">
+                    By VT <span>Công ty VT</span>
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.owl-carousel -->
+            </div>
+          </div>
+          <!-- /.sidemenu-holder -->
+          <!-- ============================================== SIDEBAR : END ============================================== -->
+
+          <!-- ============================================== CONTENT ============================================== -->
+          <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder">
+            <!-- ========================================== SECTION – HERO ========================================= -->
+
+            <div id="hero">
+              <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
+                <div
+                  class="item"
+                  style="
+                    background-image: url(./assets/images/Laptop/backgroud1.jpg);
+                  "
+                >
+                  <div class="container-fluid">
+                    <div class="caption bg-color vertical-center text-left">
+                      <div class="slider-header fadeInDown-1"></div>
+                      <div class="big-text fadeInDown-1"></div>
+                      <div class="excerpt fadeInDown-2 hidden-xs">
+                        <span> </span>
+                      </div>
+                      <div class="button-holder fadeInDown-3">
+                        <a
+                          href="index.php?page=single-product"
+                          class="btn-lg btn btn-uppercase btn-primary shop-now-button"
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- /.caption -->
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+                <!-- /.item -->
+
+                <div
+                  class="item"
+                  style="
+                    background-image: url(./assets/images/Laptop/backgroud3.webp);
+                  "
+                >
+                  <div class="container-fluid">
+                    <div class="caption bg-color vertical-center text-left">
+                      <div class="slider-header fadeInDown-1"></div>
+                      <div class="big-text fadeInDown-1">
+                        <span class="highlight"></span>
+                      </div>
+                      <div class="excerpt fadeInDown-2 hidden-xs">
+                        <span> </span>
+                      </div>
+                      <div class="button-holder fadeInDown-3">
+                        <a
+                          href="index.php?page=single-product"
+                          class="btn-lg btn btn-uppercase btn-primary shop-now-button"
+                        ></a>
+                      </div>
+                    </div>
+                    <!-- /.caption -->
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.owl-carousel -->
+            </div>
+
+            <!-- ========================================= SECTION – HERO : END ========================================= -->
+
+            <!-- ============================================== INFO BOXES ============================================== -->
+            <div class="info-boxes wow fadeInUp">
+              <div class="info-boxes-inner">
+                <div class="row">
+                  <div class="col-md-6 col-sm-4 col-lg-4">
+                    <div class="info-box">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <h4 class="info-box-heading green">Trả góp 0%</h4>
+                        </div>
+                      </div>
+                      <h6 class="text">Bảo hàng lên đến 24 tháng</h6>
+                    </div>
+                  </div>
+                  <!-- .col -->
+
+                  <div class="hidden-md col-sm-4 col-lg-4">
+                    <div class="info-box">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <h4 class="info-box-heading green">
+                            Giao hàng miễn phí
+                          </h4>
+                        </div>
+                      </div>
+                      <h6 class="text">Bao gồm nội và ngoại thành</h6>
+                    </div>
+                  </div>
+                  <!-- .col -->
+
+                  <div class="col-md-6 col-sm-4 col-lg-4">
+                    <div class="info-box">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <h4 class="info-box-heading green">Ưu đãi hấp dẫn</h4>
+                        </div>
+                      </div>
+                      <h6 class="text">
+                        Giảm giá cực sốc cho những dịp lễ lớn
+                      </h6>
+                    </div>
+                  </div>
+                  <!-- .col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.info-boxes-inner -->
+            </div>
+            <!-- /.info-boxes -->
+            <!-- ============================================== INFO BOXES : END ============================================== -->
+            <!-- ============================================== SCROLL TABS ============================================== -->
+            <div
+              id="product-tabs-slider"
+              class="scroll-tabs outer-top-vs wow fadeInUp"
+            >
+              <div class="more-info-tab clearfix">
+                <h3 class="new-product-title pull-left">Sản phẩm mới</h3>
+                <ul
+                  class="nav nav-tabs nav-tab-line pull-right"
+                  id="new-products-1"
+                >
+                  <li class="active">
+                    <a
+                      data-transition-type="backSlide"
+                      href="#all"
+                      data-toggle="tab"
+                      >Tất cả</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-transition-type="backSlide"
+                      href="#"
+                      data-toggle="tab"
+                      >Bàn phím</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-transition-type="backSlide"
+                      href="#"
+                      data-toggle="tab"
+                      >Chuột</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-transition-type="backSlide"
+                      href="#"
+                      data-toggle="tab"
+                      >Màn hình</a
+                    >
+                  </li>
+                </ul>
+                <!-- /.nav-tabs -->
+              </div>
+              <div class="tab-content outer-top-xs">
+                <div class="tab-pane in active" id="all">
+                  <div class="product-slider">
+                    <div
+                      class="owl-carousel home-owl-carousel custom-carousel owl-theme"
+                      data-item="4"
+                    >
+                      <div class="item item-carousel">
+                        <div class="products">
+                          <div class="product">
+                            <div class="product-image">
+                              <div class="image">
+                                <a href="detail.html"
+                                  ><img
+                                    src="./assets/images/Fix1/LAP1.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <!-- /.image -->
+
+                              <div class="tag new"><span>new</span></div>
+                            </div>
+                            <!-- /.product-image -->
+
+                            <div class="product-info text-left">
+                              <h3 class="name">
+                                <a
+                                  href="detail.html"
+                                  onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX506HF-HN078W')"
+                                >
+                                  Laptop ASUS TUF Gaming F15 FX506HF-HN078W</a
+                                >
+                              </h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="description"></div>
+                              <div class="product-price">
+                                <span class="price"> 17.290.000đ </span>
+                                <span class="price-before-discount">
+                                  17.950.000đ
+                                </span>
+                              </div>
+                              <!-- /.product-price -->
+                            </div>
+                            <!-- /.product-info -->
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button
+                                      data-toggle="tooltip"
+                                      class="btn btn-primary icon"
+                                      type="button"
+                                      title="Add Cart"
+                                    >
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <button
+                                      class="btn btn-primary cart-btn"
+                                      type="button"
+                                    >
+                                      Add to cart
+                                    </button>
+                                  </li>
+                                  <li class="lnk wishlist">
+                                    <a
+                                      data-toggle="tooltip"
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Wishlist"
+                                    >
+                                      <i class="icon fa fa-heart"></i>
+                                    </a>
+                                  </li>
+                                  <li class="lnk">
+                                    <a
+                                      data-toggle="tooltip"
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Compare"
+                                    >
+                                      <i
+                                        class="fa fa-signal"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- /.action -->
+                            </div>
+                            <!-- /.cart -->
+                          </div>
+                          <!-- /.product -->
+                        </div>
+                        <!-- /.products -->
+                      </div>
+                      <!-- /.item -->
+
+                      <div class="item item-carousel">
+                        <div class="products">
+                          <div class="product">
+                            <div class="product-image">
+                              <div class="image">
+                                <a href="detail.html"
+                                  ><img
+                                    src="./assets/images/Fix1/LAP2.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <!-- /.image -->
+
+                              <div class="tag hot"><span>hot</span></div>
+                            </div>
+                            <!-- /.product-image -->
+
+                            <div class="product-info text-left">
+                              <h3 class="name">
+                                <a
+                                  href="detail.html"
+                                  onclick="loadDetailItem('Macbook Air M3 13 inch 2024 8GB - 256GB')"
+                                >
+                                  Macbook Air M3 13 inch 2024 8GB - 256GB</a
+                                >
+                              </h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="description"></div>
+                              <div class="product-price">
+                                <span class="price"> 27.290.000đ </span>
+                                <span class="price-before-discount"
+                                  >27.890.000đ</span
+                                >
+                              </div>
+                              <!-- /.product-price -->
+                            </div>
+                            <!-- /.product-info -->
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button
+                                      class="btn btn-primary icon"
+                                      data-toggle="dropdown"
+                                      type="button"
+                                    >
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <button
+                                      class="btn btn-primary cart-btn isLogin"
+                                      type="button"
+                                    >
+                                      Add to cart
+                                    </button>
+                                  </li>
+                                  <li class="lnk wishlist">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Wishlist"
+                                    >
+                                      <i class="icon fa fa-heart"></i>
+                                    </a>
+                                  </li>
+                                  <li class="lnk">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Compare"
+                                    >
+                                      <i
+                                        class="fa fa-signal"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- /.action -->
+                            </div>
+                            <!-- /.cart -->
+                          </div>
+                          <!-- /.product -->
+                        </div>
+                        <!-- /.products -->
+                      </div>
+                      <!-- /.item -->
+
+                      <div class="item item-carousel">
+                        <div class="products">
+                          <div class="product">
+                            <div class="product-image">
+                              <div class="image">
+                                <a href="detail.html"
+                                  ><img
+                                    src="./assets/images/Fix1/LAP3.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <!-- /.image -->
+
+                              <div class="tag sale"><span>sale</span></div>
+                            </div>
+                            <!-- /.product-image -->
+
+                            <div class="product-info text-left">
+                              <h3 class="name">
+                                <a
+                                  href="detail.html"
+                                  onclick="loadDetailItem('Laptop ASUS VivoBook S 14 FLIP TP3402VA-LZ025W')"
+                                >
+                                  Laptop ASUS VivoBook S 14 FLIP
+                                  TP3402VA-LZ025W</a
+                                >
+                              </h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="description"></div>
+                              <div class="product-price">
+                                <span class="price"> 11.490.000đ </span>
+                                <span class="price-before-discount">
+                                  12.000.000đ
+                                </span>
+                              </div>
+                              <!-- /.product-price -->
+                            </div>
+                            <!-- /.product-info -->
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button
+                                      class="btn btn-primary icon"
+                                      data-toggle="dropdown"
+                                      type="button"
+                                    >
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <button
+                                      class="btn btn-primary cart-btn isLogin"
+                                      type="button"
+                                    >
+                                      Add to cart
+                                    </button>
+                                  </li>
+                                  <li class="lnk wishlist">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Wishlist"
+                                    >
+                                      <i class="icon fa fa-heart"></i>
+                                    </a>
+                                  </li>
+                                  <li class="lnk">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Compare"
+                                    >
+                                      <i
+                                        class="fa fa-signal"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- /.action -->
+                            </div>
+                            <!-- /.cart -->
+                          </div>
+                          <!-- /.product -->
+                        </div>
+                        <!-- /.products -->
+                      </div>
+                      <!-- /.item -->
+
+                      <div class="item item-carousel">
+                        <div class="products">
+                          <div class="product">
+                            <div class="product-image">
+                              <div class="image">
+                                <a href="detail.html"
+                                  ><img
+                                    src="./assets/images/Fix1/LAP4.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <!-- /.image -->
+
+                              <div class="tag sale"><span>sale</span></div>
+                            </div>
+                            <!-- /.product-image -->
+
+                            <div class="product-info text-left">
+                              <h3 class="name">
+                                <a
+                                  href="detail.html"
+                                  onclick="loadDetailItem('Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W')"
+                                >
+                                  Laptop ASUS TUF Gaming F15 FX507ZC4-HN074W</a
+                                >
+                              </h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="description"></div>
+                              <div class="product-price">
+                                <span class="price"> 19.490.000đ </span>
+                                <span class="price-before-discount"
+                                  >22.990.000đ</span
+                                >
+                              </div>
+                              <!-- /.product-price -->
+                            </div>
+                            <!-- /.product-info -->
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button
+                                      class="btn btn-primary icon"
+                                      data-toggle="dropdown"
+                                      type="button"
+                                    >
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <button
+                                      class="btn btn-primary cart-btn"
+                                      type="button"
+                                    >
+                                      Add to cart
+                                    </button>
+                                  </li>
+                                  <li class="lnk wishlist">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Wishlist"
+                                    >
+                                      <i class="icon fa fa-heart"></i>
+                                    </a>
+                                  </li>
+                                  <li class="lnk">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Compare"
+                                    >
+                                      <i
+                                        class="fa fa-signal"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- /.action -->
+                            </div>
+                            <!-- /.cart -->
+                          </div>
+                          <!-- /.product -->
+                        </div>
+                        <!-- /.products -->
+                      </div>
+                      <!-- /.item -->
+
+                      <div class="item item-carousel">
+                        <div class="products">
+                          <div class="product">
+                            <div class="product-image">
+                              <div class="image">
+                                <a href="detail.html"
+                                  ><img
+                                    src="./assets/images/Fix1/LAP5.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <!-- /.image -->
+
+                              <div class="tag hot"><span>hot</span></div>
+                            </div>
+                            <!-- /.product-image -->
+
+                            <div class="product-info text-left">
+                              <h3 class="name">
+                                <a
+                                  href="detail.html"
+                                  onclick="loadDetailItem('Laptop Lenovo LOQ 15IAX9 83GS001RVN')"
+                                >
+                                  Laptop Lenovo LOQ 15IAX9 83GS001RVN</a
+                                >
+                              </h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="description"></div>
+                              <div class="product-price">
+                                <span class="price"> 20.190.000đ </span>
+                                <span class="price-before-discount"
+                                  >21.550.000đ</span
+                                >
+                              </div>
+                              <!-- /.product-price -->
+                            </div>
+                            <!-- /.product-info -->
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button
+                                      class="btn btn-primary icon"
+                                      data-toggle="dropdown"
+                                      type="button"
+                                    >
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <button
+                                      class="btn btn-primary cart-btn"
+                                      type="button"
+                                    >
+                                      Add to cart
+                                    </button>
+                                  </li>
+                                  <li class="lnk wishlist">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Wishlist"
+                                    >
+                                      <i class="icon fa fa-heart"></i>
+                                    </a>
+                                  </li>
+                                  <li class="lnk">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Compare"
+                                    >
+                                      <i
+                                        class="fa fa-signal"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- /.action -->
+                            </div>
+                            <!-- /.cart -->
+                          </div>
+                          <!-- /.product -->
+                        </div>
+                        <!-- /.products -->
+                      </div>
+                      <!-- /.item -->
+
+                      <div class="item item-carousel">
+                        <div class="products">
+                          <div class="product">
+                            <div class="product-image">
+                              <div class="image">
+                                <a href="detail.html"
+                                  ><img
+                                    src="./assets/images/Fix1/LAP6.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <!-- /.image -->
+
+                              <div class="tag new"><span>new</span></div>
+                            </div>
+                            <!-- /.product-image -->
+
+                            <div class="product-info text-left">
+                              <h3 class="name">
+                                <a
+                                  href="detail.html"
+                                  onclick="loadDetailItem('Laptop MSI Gaming GF63 12UC-887VN')"
+                                >
+                                  Laptop MSI Gaming GF63 12UC-887VN</a
+                                >
+                              </h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="description"></div>
+                              <div class="product-price">
+                                <span class="price"> 18.990.000đ </span>
+                                <span class="price-before-discount"
+                                  >20.190.000đ</span
+                                >
+                              </div>
+                              <!-- /.product-price -->
+                            </div>
+                            <!-- /.product-info -->
+                            <div class="cart clearfix animate-effect">
+                              <div class="action">
+                                <ul class="list-unstyled">
+                                  <li class="add-cart-button btn-group">
+                                    <button
+                                      class="btn btn-primary icon"
+                                      data-toggle="dropdown"
+                                      type="button"
+                                    >
+                                      <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                    <button
+                                      class="btn btn-primary cart-btn"
+                                      type="button"
+                                    >
+                                      Add to cart
+                                    </button>
+                                  </li>
+                                  <li class="lnk wishlist">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Wishlist"
+                                    >
+                                      <i class="icon fa fa-heart"></i>
+                                    </a>
+                                  </li>
+                                  <li class="lnk">
+                                    <a
+                                      class="add-to-cart"
+                                      href="#"
+                                      title="Compare"
+                                    >
+                                      <i
+                                        class="fa fa-signal"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- /.action -->
+                            </div>
+                            <!-- /.cart -->
+                          </div>
+                          <!-- /.product -->
+                        </div>
+                        <!-- /.products -->
+                      </div>
+                      <!-- /.item -->
+                    </div>
+                    <!-- /.home-owl-carousel -->
+                  </div>
+                  <!-- /.product-slider -->
+                </div>
+                <!-- /.tab-pane -->
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- /.scroll-tabs -->
+            <!-- ============================================== SCROLL TABS : END ============================================== -->
+            <!-- ============================================== WIDE PRODUCTS ============================================== -->
+            <div class="wide-banners wow fadeInUp outer-bottom-xs">
+              <div class="row">
+                <div class="col-md-7 col-sm-7">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="./assets/images/Laptop/Mua1tang1.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-5 col-sm-5">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="./assets/images/Laptop/laptopsale.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.wide-banners -->
+
+            <!-- ============================================== WIDE PRODUCTS : END ============================================== -->
+            <!-- ============================================== FEATURED PRODUCTS ============================================== -->
+            <section class="section featured-product wow fadeInUp">
+              <h3 class="section-title">Sản phẩm đang thịnh hành</h3>
+              <div
+                class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs"
+              >
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/Chuột logetech.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Chuột Logitech G Pro X Superlight 2 Magenta')"
+                          >
+                            Chuột Logitech G Pro X Superlight 2 Magenta</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 3.690.000đ </span>
+                          <span class="price-before-discount">
+                            3.990.000đ
+                          </span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/Chuot rampoo.jpg"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Chuột Rapoo Không dây V300SE Black')"
+                          >
+                            Chuột Rapoo Không dây V300SE Black</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 990.000đ </span>
+                          <span class="price-before-discount">1.290.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/tainghenova7.jpg"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Tai nghe Steelseries Arctis Nova 7 Dragon Edition')"
+                          >
+                            Tai nghe Steelseries Arctis Nova 7 Dragon Edition</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 5.990.000đ </span>
+                          <span class="price-before-discount">6.390.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/ghewarior.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Ghế Ergonomic Warrior Hero series WEC502 Grey')"
+                          >
+                            Ghế Ergonomic Warrior Hero series WEC502 Grey</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 2.690.000đ </span>
+                          <span class="price-before-discount">2.990.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/gheGVP.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Ghế Gaming cao cấp lưng tựa ngả có gác chân GVP-06')"
+                          >
+                            Ghế Gaming cao cấp lưng tựa ngả có gác chân
+                            GVP-06</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 1.950.000đ </span>
+                          <span class="price-before-discount">2.950.000đ </span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/ghe e-dra.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Ghế chơi Game E-DRA Hercules EGC203 Pro Black')"
+                          >
+                            Ghế chơi Game E-DRA Hercules EGC203 Pro Black</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 3.690.000đ </span>
+                          <span class="price-before-discount">4.690.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.home-owl-carousel -->
+            </section>
+            <!-- /.section -->
+            <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->
+            <!-- ============================================== WIDE PRODUCTS ============================================== -->
+            <div class="wide-banners wow fadeInUp outer-bottom-xs">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="./assets/images/Laptop/learnmore.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="strip strip-text">
+                      <div class="strip-inner">
+                        <h2 class="text-right">
+                          <br />
+                          <span class="shopping-needs"></span>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="new-label">
+                      <div class="text">NEW</div>
+                    </div>
+                    <!-- /.new-label -->
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.wide-banners -->
+            <!-- ============================================== WIDE PRODUCTS : END ============================================== -->
+            <!-- ============================================== BEST SELLER ============================================== -->
+
+            <div class="best-deal wow fadeInUp outer-bottom-xs">
+              <h3 class="section-title">Công nghệ mới</h3>
+              <div class="sidebar-widget-body outer-top-xs">
+                <div
+                  class="owl-carousel best-seller custom-carousel owl-theme outer-top-xs"
+                >
+                  <div class="item">
+                    <div class="products best-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/ssdvi550.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Ổ Cứng SSD Verbatim Vi550 256GB Sata3')"
+                                    >Ổ Cứng SSD Verbatim Vi550 256GB Sata3</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 590.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/ssd580.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Ổ Cứng SSD WD Blue SN580 500GB M.2 NVMe PCIe Gen 4 (WDS500G3B0E)')"
+                                    >Ổ Cứng SSD WD Blue SN580 500GB M.2 NVMe
+                                    PCIe Gen 4 (WDS500G3B0E)</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 1.490.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products best-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/ssdmsi480.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Ổ cứng SSD MSI SPATIUM M480 PRO PCIe 4.0 NVMe M.2 1TB')"
+                                    >Ổ cứng SSD MSI SPATIUM M480 PRO PCIe 4.0
+                                    NVMe M.2 1TB</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 2.190.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/manhinhsamsung.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Màn hình Samsung LS27CG510 27 2K 165Hz chuyên game')"
+                                    >Màn hình Samsung LS27CG510 27 2K 165Hz
+                                    chuyên game</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 4.790.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products best-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/nguồn1000w.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Nguồn máy tính ASUS ROG Strix 1000W AURA White Edition - 80Plus Gold - Full Modular (1000W)')"
+                                    >Nguồn máy tính ASUS ROG Strix 1000W AURA
+                                    White Edition - 80 Plus Gold - Full Modular
+                                    (1000W)</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 6.990.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/tannhietll120.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Bộ 3 quạt Corsair LL120 RGB kèm Node PRO (CO-9050072-WW)')"
+                                    >Bộ 3 quạt Corsair LL120 RGB kèm Node PRO
+                                    (CO-9050072-WW)</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 2.790.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products best-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/ssdvi550.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Ổ Cứng SSD Verbatim Vi550 256GB Sata3')"
+                                    >Ổ Cứng SSD Verbatim Vi550 256GB Sata3</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 590.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="./detail.html">
+                                    <img
+                                      src="./assets/images/Laptop/ssd580.webp"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col2 col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a
+                                    href="./detail.html"
+                                    onclick="loadDetailItem('Ổ Cứng SSD WD Blue SN580 500GB M.2 NVMe PCIe Gen 4 (WDS500G3B0E)')"
+                                    >Ổ Cứng SSD WD Blue SN580 500GB M.2 NVMe
+                                    PCIe Gen 4 (WDS500G3B0E)</a
+                                  >
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> 1.490.000đ </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.sidebar-widget-body -->
+            </div>
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== BEST SELLER : END ============================================== -->
+
+            <!-- ============================================== BLOG SLIDER ============================================== -->
+            <section class="section latest-blog outer-bottom-vs wow fadeInUp">
+              <h3 class="section-title">Khuyến mãi vô tận</h3>
+              <div class="blog-slider-container outer-top-xs">
+                <div class="owl-carousel blog-slider custom-carousel">
+                  <div class="item">
+                    <div class="blog-post">
+                      <div class="blog-post-image">
+                        <div class="image">
+                          <a href="#!"
+                            ><img
+                              src="./assets/images/Laptop/backgroud1_1.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- /.blog-post-image -->
+
+                      <div class="blog-post-info text-left">
+                        <h3 class="name">
+                          <a href="#"
+                            >Nhiều dòng và loại laptop từ nhiều hãng khác
+                            nhau</a
+                          >
+                        </h3>
+                        <span class="info"
+                          >By VT &nbsp;|&nbsp; 31 Tháng 2 Năm 2024
+                        </span>
+                        <p class="text">
+                          Mang đến những trải nghiệm bất ngờ, thú vị và tốt nhất
+                          đến người sử dụng
+                        </p>
+                        <a href="#" class="lnk btn btn-primary">Đọc thêm</a>
+                      </div>
+                      <!-- /.blog-post-info -->
+                    </div>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.item -->
+
+                  <div class="item">
+                    <div class="blog-post">
+                      <div class="blog-post-image">
+                        <div class="image">
+                          <a href="#!"
+                            ><img
+                              src="./assets/images/Laptop/backgroud1_2.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- /.blog-post-image -->
+
+                      <div class="blog-post-info text-left">
+                        <h3 class="name">
+                          <a href="#"
+                            >Nhiều dòng và loại PC từ nhiều hãng khác nhau</a
+                          >
+                        </h3>
+                        <span class="info"
+                          >By VT &nbsp;|&nbsp; 31 Tháng 2 Năm 2024
+                        </span>
+                        <p class="text">
+                          Mang đến những trải nghiệm bất ngờ, thú vị và tốt nhất
+                          đến người sử dụng
+                        </p>
+                        <a href="#" class="lnk btn btn-primary">Đọc thêm</a>
+                      </div>
+                      <!-- /.blog-post-info -->
+                    </div>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.item -->
+
+                  <!-- /.item -->
+
+                  <div class="item">
+                    <div class="blog-post">
+                      <div class="blog-post-image">
+                        <div class="image">
+                          <a href="#!"
+                            ><img
+                              src="./assets/images/Laptop/backgroud1_1.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- /.blog-post-image -->
+
+                      <div class="blog-post-info text-left">
+                        <h3 class="name">
+                          <a href="#"
+                            >Nhiều dòng và loại laptop từ nhiều hãng khác
+                            nhau</a
+                          >
+                        </h3>
+                        <span class="info"
+                          >By VT &nbsp;|&nbsp; 31 Tháng 2 Năm 2024
+                        </span>
+                        <p class="text">
+                          Mang đến những trải nghiệm bất ngờ, thú vị và tốt nhất
+                          đến người sử dụng
+                        </p>
+                        <a href="#" class="lnk btn btn-primary">Đọc thêm</a>
+                      </div>
+                      <!-- /.blog-post-info -->
+                    </div>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.item -->
+
+                  <div class="item">
+                    <div class="blog-post">
+                      <div class="blog-post-image">
+                        <div class="image">
+                          <a href="#!"
+                            ><img
+                              src="./assets/images/Laptop/backgroud1_2.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- /.blog-post-image -->
+
+                      <div class="blog-post-info text-left">
+                        <h3 class="name">
+                          <a href="#"
+                            >Nhiều dòng và loại PC từ nhiều hãng khác nhau</a
+                          >
+                        </h3>
+                        <span class="info"
+                          >By VT &nbsp;|&nbsp; 31 Tháng 2 Năm 2024
+                        </span>
+                        <p class="text">
+                          Mang đến những trải nghiệm bất ngờ, thú vị và tốt nhất
+                          đến người sử dụng
+                        </p>
+                        <a href="#" class="lnk btn btn-primary">Đọc thêm</a>
+                      </div>
+                      <!-- /.blog-post-info -->
+                    </div>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.item -->
+
+                  <div class="item">
+                    <div class="blog-post">
+                      <div class="blog-post-image">
+                        <div class="image">
+                          <a href="#!"
+                            ><img
+                              src="./assets/images/Laptop/backgroud1_1.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- /.blog-post-image -->
+
+                      <div class="blog-post-info text-left">
+                        <h3 class="name">
+                          <a href="#"
+                            >Nhiều dòng và loại laptop từ nhiều hãng khác
+                            nhau</a
+                          >
+                        </h3>
+                        <span class="info"
+                          >By VT &nbsp;|&nbsp; 31 Tháng 2 Năm 2024
+                        </span>
+                        <p class="text">
+                          Mang đến những trải nghiệm bất ngờ, thú vị và tốt nhất
+                          đến người sử dụng
+                        </p>
+                        <a href="#" class="lnk btn btn-primary">Đọc thêm</a>
+                      </div>
+                      <!-- /.blog-post-info -->
+                    </div>
+                    <!-- /.blog-post -->
+                  </div>
+                  <!-- /.item -->
+                </div>
+                <!-- /.owl-carousel -->
+              </div>
+              <!-- /.blog-slider-container -->
+            </section>
+            <!-- /.section -->
+            <!-- ============================================== BLOG SLIDER : END ============================================== -->
+
+            <!-- ============================================== FEATURED PRODUCTS ============================================== -->
+            <section class="section wow fadeInUp new-arriavls">
+              <h3 class="section-title">Lựa chọn khác</h3>
+              <div
+                class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs"
+              >
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/Chuot rampoo.jpg"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Chuột Rapoo Không dây V300SE Black')"
+                            >Chuột Rapoo Không dây V300SE Black</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 499.000đ</span>
+                          <span class="price-before-discount">500.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/Chuột logetech.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Chuột Logitech G Pro X Superlight 2 Magenta')"
+                            >Chuột Logitech G Pro X Superlight 2 Magenta</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 2.090.000đ </span>
+                          <span class="price-before-discount">
+                            2.500.000đ
+                          </span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/gheair.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Ghế Gaming Cougar Armor AIR')"
+                            >Ghế Gaming Cougar Armor AIR</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 2.190.000đ </span>
+                          <span class="price-before-discount">2.500.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/manhinhsamsung.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Màn hình Samsung LS27CG510 27 2K 165Hz chuyên game')"
+                            >Màn hình Samsung LS27CG510 27 2K 165Hz chuyên
+                            game</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 4.590.000đ </span>
+                          <span class="price-before-discount">4.800.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img
+                              src="./assets/images/Laptop/nguồn1000w.webp"
+                              alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Nguồn máy tính ASUS ROG Strix 1000W AURA White Edition - 80 Plus Gold - Full Modular (1000W)')"
+                            >Nguồn máy tính ASUS ROG Strix 1000W AURA White
+                            Edition - 80 Plus Gold - Full Modular (1000W)</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 1.990.000đ </span>
+                          <span class="price-before-discount">2.200.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html"
+                            ><img src="./assets/images/Fix1/LAP6.webp" alt=""
+                          /></a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a
+                            href="detail.html"
+                            onclick="loadDetailItem('Laptop MSI Gaming GF63 12UC-887VN')"
+                            >Laptop MSI Gaming GF63 12UC-887VN</a
+                          >
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> 18.790.000đ </span>
+                          <span class="price-before-discount">21.990.000đ</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a class="add-to-cart" href="#" title="Wishlist">
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a class="add-to-cart" href="#" title="Compare">
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.home-owl-carousel -->
+            </section>
+            <!-- /.section -->
+            <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->
+          </div>
+          <!-- /.homebanner-holder -->
+          <!-- ============================================== CONTENT : END ============================================== -->
+        </div>
+        <!-- /.row -->
+        <!-- ============================================== BRANDS CAROUSEL ============================================== -->
+        <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /#top-banner-and-menu -->
+
+    <!-- ============================================================= FOOTER ============================================================= -->
+    <footer id="footer" class="footer color-bg">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Liên hệ với chúng tôi</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="toggle-footer">
+                  <li class="media">
+                    <div class="pull-left">
+                      <span class="icon fa-stack fa-lg">
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                    <div class="media-body">
+                      <p>
+                        1/123 Lê Trọng Tấn, quận Tân Phú, Thành phố Hồ Chí Minh
+                      </p>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="pull-left">
+                      <span class="icon fa-stack fa-lg">
+                        <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                    <div class="media-body">
+                      <p>
+                        0888.777.666<br />
+                        0909.999.888
+                      </p>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="pull-left">
+                      <span class="icon fa-stack fa-lg">
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                    <div class="media-body">
+                      <span><a href="#">doancuoiky@gmail.com</a></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Dịch vụ khách hàng</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="list-unstyled">
+                  <li class="first"><a href="./sign-in.html">Tài khoản</a></li>
+                  <li><a href="#">Lịch sử tiêu dùng</a></li>
+                  <li><a href="./faq.html">FAQ</a></li>
+                  <li>
+                    <a href="./terms-conditions.html">Điều khoản sử dụng</a>
+                  </li>
+                  <li class="last"><a href="#">Trung tâm hỗ trợ</a></li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Tập đoàn</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="list-unstyled">
+                  <li class="first"><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Dịch vụ khách hàng</a></li>
+                  <li><a href="#">Bảo mật</a></li>
+                  <li><a href="#">Quan hệ quốc tế</a></li>
+                  <li class="last"><a href="#">Tìm kiếm</a></li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Tại sao lại chọn chúng tôi</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="list-unstyled">
+                  <li class="first"><a href="#">An toàn</a></li>
+                  <li><a href="#">Đáng tin cậy</a></li>
+                  <li><a href="#">Nhiệt tình</a></li>
+                  <li><a href="#">Làm việc 24/7</a></li>
+                  <li class="last">
+                    <a href="contact-us.html">Khác hàng là trên hết</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container">
+          <div class="col-xs-12 col-sm-6 no-padding social">
+            <ul class="link">
+              <li class="fb pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Facebook"></a>
+              </li>
+              <li class="tw pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Twitter"></a>
+              </li>
+              <li class="googleplus pull-left">
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="#"
+                  title="GooglePlus"
+                ></a>
+              </li>
+              <li class="rss pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="RSS"></a>
+              </li>
+              <li class="pintrest pull-left">
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="#"
+                  title="PInterest"
+                ></a>
+              </li>
+              <li class="linkedin pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Linkedin"></a>
+              </li>
+              <li class="youtube pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Youtube"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6 no-padding">
+            <div class="clearfix payment-methods">
+              <ul>
+                <li><img src="assets\images\payments\1.png" alt="" /></li>
+                <li><img src="assets\images\payments\2.png" alt="" /></li>
+                <li><img src="assets\images\payments\3.png" alt="" /></li>
+                <li><img src="assets\images\payments\4.png" alt="" /></li>
+                <li><img src="assets\images\payments\5.png" alt="" /></li>
+              </ul>
+            </div>
+            <!-- /.payment-methods -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ============================================================= FOOTER : END============================================================= -->
+
+    <script src="assets\js\jquery-1.11.1.min.js"></script>
+    <script src="assets\js\bootstrap.min.js"></script>
+    <script src="assets\js\bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets\js\owl.carousel.min.js"></script>
+    <script src="assets\js\echo.min.js"></script>
+    <script src="assets\js\jquery.easing-1.3.min.js"></script>
+    <script src="assets\js\bootstrap-slider.min.js"></script>
+    <script src="assets\js\jquery.rateit.min.js"></script>
+    <script type="text/javascript" src="assets\js\lightbox.min.js"></script>
+    <script src="assets\js\bootstrap-select.min.js"></script>
+    <script src="assets\js\wow.min.js"></script>
+    <script src="assets\js\scripts.js"></script>
+    <script src="assets/js/main_script.js"></script>
+    <script src="./assets/js/timeb_custom.js"></script>
+    <script src="./assets/js/timec_custom.js"></script>
+    <script src="./assets/js/login-account-when-redirect.js"></script>
+    <script src="./assets/js/check_login.js"></script>
+    <script src="./assets/js/list-all-item.js"></script>
+    <script src="./assets/js/searchItemByName.js"></script>
+    <script src="./assets/js/total-item-any-cart.js"></script>
+  </body>
+</html>
