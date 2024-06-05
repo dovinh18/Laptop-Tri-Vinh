@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets\css\animate.min.css" />
     <link rel="stylesheet" href="assets\css\rateit.css" />
     <link rel="stylesheet" href="assets\css\bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/chatbox.css" />
 
     <!-- Icons/Glyphs -->
     <link rel="stylesheet" href="assets\css\font-awesome.css" />
@@ -106,13 +107,14 @@
                           <h3 class="modal-title" id="search-result-area">
                             Kết quả tìm kiếm
                           </h3>
-                          <br>
-                          <p style="color: blue;">&nbsp;&nbsp;&nbsp;<b id="total-item-result"></b></p>
+                          <br />
+                          <p style="color: blue">
+                            &nbsp;&nbsp;&nbsp;<b id="total-item-result"></b>
+                          </p>
                         </div>
                         <div class="modal-body" id="search-result-body">
                           <table class="table">
-                            <tbody id="all-item-search-result">
-                            </tbody>
+                            <tbody id="all-item-search-result"></tbody>
                           </table>
                         </div>
                         <div class="modal-footer">
@@ -150,9 +152,14 @@
                   data-placement="bottom"
                 >
                   <div class="items-cart-inner">
-                    <div class="total-price-basket" style="position: relative;">
+                    <div class="total-price-basket" style="position: relative">
                       <i class="glyphicon glyphicon-shopping-cart"></i>
-                      <span id="total-sc-item" class="badge badge-light" style="position: absolute; top: -6px;">0</span>
+                      <span
+                        id="total-sc-item"
+                        class="badge badge-light"
+                        style="position: absolute; top: -6px"
+                        >0</span
+                      >
                     </div>
                   </div>
                 </a>
@@ -167,9 +174,14 @@
                   data-placement="bottom"
                 >
                   <div class="items-cart-inner">
-                    <div class="total-price-basket" style="position: relative;">
+                    <div class="total-price-basket" style="position: relative">
                       <i class="glyphicon glyphicon-heart"></i>
-                      <span id="total-wl-item" class="badge badge-light" style="position: absolute; top: -6px;">0</span>
+                      <span
+                        id="total-wl-item"
+                        class="badge badge-light"
+                        style="position: absolute; top: -6px"
+                        >0</span
+                      >
                     </div>
                   </div>
                 </a>
@@ -3639,6 +3651,101 @@
         <!-- /.row -->
         <!-- ============================================== BRANDS CAROUSEL ============================================== -->
         <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
+        <div class="container text-right" id="chatbox_on_or_off">
+          <div class="row">
+            <div class="round hollow">
+              <a
+                id="addClass"
+                onclick="document.getElementById('chatbox_on_or_off').style.display='none';"
+                ><span class="glyphicon glyphicon-comment"></span>&nbsp; Tư vấn
+                khách hàng
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-box chat-popup" id="qnimate">
+          <div class="popup-head">
+            <div class="popup-head-left pull-left">
+              <img src="assets/images/no-user.webp" alt="iamgurdeeposahan" />
+              Tư vấn viên
+            </div>
+            <div class="popup-head-right pull-right">
+              <div class="btn-group">
+                <button
+                  class="chat-header-button"
+                  data-toggle="dropdown"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  <i class="glyphicon glyphicon-cog"></i>
+                </button>
+                <ul role="menu" class="dropdown-menu pull-right">
+                  <li><a href="#">Phương tiện</a></li>
+                  <li><a href="#">Dọn dẹp tin nhắn</a></li>
+                </ul>
+              </div>
+
+              <button
+                data-widget="remove"
+                id="removeClass"
+                class="chat-header-button pull-right"
+                type="button"
+                onclick="document.getElementById('chatbox_on_or_off').style.display='block';"
+              >
+                <i class="glyphicon glyphicon-off"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-messages">
+            <div class="direct-chat-messages">
+              <div class="chat-box-single-line">
+                <abbr class="timestamp">Ngày 04/06/2024</abbr>
+              </div>
+
+              <!-- Message. Default to the left -->
+              <div class="direct-chat-msg doted-border">
+                <div class="direct-chat-info clearfix">
+                  <span class="direct-chat-name pull-left">Tư vấn viên</span>
+                </div>
+                <!-- /.direct-chat-info -->
+                <img
+                  alt="message user image"
+                  src="assets/images/no-user.webp"
+                  class="direct-chat-img"
+                /><!-- /.direct-chat-img -->
+                <div class="direct-chat-text">
+                  Xin chào bạn, bạn muốn chúng tôi hỗ trợ gì ?
+                </div>
+                <!-- /.direct-chat-text -->
+              </div>
+              <!-- /.direct-chat-msg -->
+            </div>
+          </div>
+          <div class="popup-messages-footer">
+            <textarea
+              id="status_message"
+              placeholder="Nhập tin nhắn..."
+              rows="10"
+              cols="40"
+              name="message"
+            ></textarea>
+            <div class="btn-footer">
+              <button class="bg_none">
+                <i class="glyphicon glyphicon-film"></i>
+              </button>
+              <button class="bg_none">
+                <i class="glyphicon glyphicon-camera"></i>
+              </button>
+              <button class="bg_none">
+                <i class="glyphicon glyphicon-paperclip"></i>
+              </button>
+              <button class="bg_none pull-right">
+                <i class="glyphicon glyphicon-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </div>
@@ -3834,5 +3941,16 @@
     <script src="./assets/js/list-all-item.js"></script>
     <script src="./assets/js/searchItemByName.js"></script>
     <script src="./assets/js/total-item-any-cart.js"></script>
+    <script>
+      $(function () {
+        $("#addClass").click(function () {
+          $("#qnimate").addClass("popup-box-on");
+        });
+
+        $("#removeClass").click(function () {
+          $("#qnimate").removeClass("popup-box-on");
+        });
+      });
+    </script>
   </body>
 </html>
